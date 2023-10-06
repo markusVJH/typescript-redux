@@ -51,7 +51,7 @@ export const getUsers = createAsyncThunk ('users/getUsers', async () => {
 })
 
 export const getUserAlbums = createAsyncThunk ('users/getUserAlbums', async (userId: number) => {
-  const response = await axios.get<Album[]>(`https://jsonplaceholder.typicode.com/users/${userId}/albums}`)
+  const response = await axios.get<Album[]>(`https://jsonplaceholder.typicode.com/users/${userId}/albums`)
   return response.data;
 })
 

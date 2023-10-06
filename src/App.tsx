@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<Layout />} />
         <Route path="/about" element={<About />} />
         <Route path="/users" element={<UsersView />} />
-        <Route path="/users:userId" element={<UserSingle />} />
+        <Route path="/users/:userId" element={<UserSingle />} />
       </Routes>
       </BrowserRouter>
     </div>
