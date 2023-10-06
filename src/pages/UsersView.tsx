@@ -1,9 +1,11 @@
-import React from 'react';
+import Users from "../components/Users/Users";
+
 
 const UsersView = () => {
   return (
     <div>
-      xD
+      <h1>Users</h1>
+      <Users />
     </div>
   );
 };
