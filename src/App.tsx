@@ -14,6 +14,7 @@ function App() {
         <Route path="/" element={<Layout />} />
         <Route path="/about" element={<About />} />
         <Route path="/users" element={<UsersView />} />
+        {/* <Route path="/users:userId" element={} /> */}
       </Routes>
       </BrowserRouter>
     </div>
