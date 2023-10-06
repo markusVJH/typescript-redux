@@ -3,6 +3,7 @@ import { getUserAlbums, getUsers } from "../../features/usersSlice";
 import { useAppDispatch, useAppSelector } from "../../hooks/hooks";
 import { useParams } from "react-router-dom";
 import { Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from "@mui/material";
+import '../../App.css'
 
 const UserSingle = () => {
   const dispatch = useAppDispatch();
@@ -27,11 +28,13 @@ const UserSingle = () => {
 return (
   <div>
     <Typography variant="h4">User Albums</Typography>
-    <TableContainer>
+    <TableContainer component={Paper} style={{maxWidth: '50rem', margin:'0 auto'}}>
       <Table>
         <TableHead>
+          <TableRow>
             <TableCell>Album ID</TableCell>
             <TableCell>Title</TableCell>
+          </TableRow>  
         </TableHead>
         <TableBody>
           {userAlbums.map((album) => (

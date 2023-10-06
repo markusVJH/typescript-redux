@@ -1,7 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Montserrat", sans-serif !important;
+}
+
 .App {
   text-align: center;
 }
 
+body {
+  background-color: rgb(247, 247, 247);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
