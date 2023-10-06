@@ -1,9 +1,10 @@
 import './App.css';
+import CustomButton from './components/CustomButton/CustomButton';
 
 function App() {
   return (
     <div className="App">
-      xD
+      <CustomButton />
     </div>
   );
 }
