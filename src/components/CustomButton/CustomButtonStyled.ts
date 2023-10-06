@@ -4,10 +4,10 @@ import { Button, ButtonProps, styled } from '@mui/material';
 import React from 'react';
 
 const CustomButtonStyled = styled(Button)<ButtonProps>(({ theme }) => ({
-  backgroundColor: theme.palette.primary.main,
-  color: theme.palette.primary.contrastText,
+  backgroundColor: theme.palette.success.main,
+  color: theme.palette.success.contrastText,
   '&:hover': {
-    backgroundColor: "darkblue"
+    backgroundColor: "darkgreen"
   },
 }))
 
