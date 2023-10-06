@@ -19,6 +19,11 @@ const UsersCard = ({ user }: UserCardProps) => {
             <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }} >
               {user.username} - {user.email}
             </Typography>
+            <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }} >
+              {user.address.street}, {user.address.suite}
+              <br />
+              {user.address.city}, {user.address.zipcode}
+            </Typography>
           </CardContent>
       </Card>
     </Link>

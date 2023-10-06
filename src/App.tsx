@@ -4,6 +4,7 @@ import CustomButton from './components/CustomButton/CustomButton';
 import Layout from './components/Layout/Layout';
 import UsersView from './pages/UsersView';
 import About from './pages/About';
+import UserSingle from './components/Users/UserSingle';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route path="/" element={<Layout />} />
         <Route path="/about" element={<About />} />
         <Route path="/users" element={<UsersView />} />
-        {/* <Route path="/users:userId" element={} /> */}
+        <Route path="/users:userId" element={<UserSingle />} />
       </Routes>
       </BrowserRouter>
     </div>
